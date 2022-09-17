@@ -13,23 +13,15 @@ function Header() {
   return (
     <header className="grid grid-cols-2 md:grid-cols-5 justify-between items-center p-5">
       <div className="flex  items-center space-x-2">
-        <img
-          className="w-20 rounded-full h-20"
-          src="https://avatars.githubusercontent.com/u/66429052?v=4"
-          alt=""
-        />
-
-        <div>
-          <h1 className="text-lg text-white">JAY DRAW</h1>
-          <p className="text-xs text-emerald-500">
-            User :{address?.substring(0, 7)}...
-            {address?.substring(address.length, address.length - 5)}
-          </p>
-        </div>
+        <h1 className="md:text-xl text-base text-emerald-500 font-bold">
+          💲🎉 User :{address?.substring(0, 7)}...
+          {address?.substring(address.length, address.length - 5)}
+        </h1>
       </div>
       <div className="hidden md:flex md:col-span-3 items-center justify-center ">
         <div className="bg-[#0A1F1C] p-4 space-x-2 rounded-xl">
           <Button isActive title="Buy Tickets" />
+
           <Button title="  Logout   " onClick={disconnect} />
         </div>
       </div>

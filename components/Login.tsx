@@ -9,7 +9,7 @@ function Login() {
   );
 
   return (
-    <div className=" bg-[#091818] flex h-screen items-center justify-center">
+    <div className="bg-[#091818] flex h-screen w-screen items-center justify-center overflow-x-hidden overflow-y-hidden">
       <Head>
         <title>🎉WEB 3.0 Lottr 🎉</title>
         <meta name="description" content="login " />
@@ -19,7 +19,7 @@ function Login() {
         />
       </Head>
       {isLoading ? (
-        <div className="bg-[#091B18] h-screen w-screen flex items-center justify-center justify-items-center ">
+        <div className="bg-[#091818]  flex items-center justify-center justify-items-center p-2">
           <RingLoader color="#36d7b7" size="400" />
         </div>
       ) : (
@@ -30,7 +30,7 @@ function Login() {
           <div className="flex flex-col items-center mt-12">
             <ConnectWallet accentColor="" />
 
-            <h1 className="text-5xl text-white  font-bold  mt-4">
+            <h1 className="text-2xl md:text-5xl text-white  font-bold  mt-4">
               WEB 3.0 Lottr
             </h1>
             <a
